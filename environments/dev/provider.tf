@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-devopsinsiders"
-    storage_account_name = "twostates"
+    resource_group_name  = "testrg"
+    storage_account_name = "strgadi01"
     container_name       = "tfstate"
     key                  = "dev.tfstate"
   }
@@ -15,5 +15,5 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "1075ec7a-b17a-4f37-bf3f-9d68c4506dc1"
+  subscription_id = "f5e186f5-0eba-4768-80ed-32e05f166b3b"
 }

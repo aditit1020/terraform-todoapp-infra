@@ -32,7 +32,7 @@ module "acr" {
 module "sql_server" {
   depends_on      = [module.rg]
   source          = "../../modules/azurerm_sql_server"
-  sql_server_name = "sql-dev-todoapp"
+  sql_server_name = "sql-dev-testad"
   rg_name         = "testrg"
   location        = "centralindia"
   admin_username  = "devopsadmin"
